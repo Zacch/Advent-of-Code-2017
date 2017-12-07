@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CD28A3101FD7CDB300075A70 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28A30F1FD7CDB300075A70 /* main.swift */; };
 		CD28A3171FD7CDD500075A70 /* Day06.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28A3161FD7CDD500075A70 /* Day06.swift */; };
+		CD79F7CB1FD895BF0013D911 /* Day07.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD79F7CA1FD895BF0013D911 /* Day07.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,8 @@
 		CD28A30C1FD7CDB300075A70 /* Advent Of Code 2017 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Advent Of Code 2017"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD28A30F1FD7CDB300075A70 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CD28A3161FD7CDD500075A70 /* Day06.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day06.swift; sourceTree = "<group>"; };
+		CD79F7CA1FD895BF0013D911 /* Day07.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day07.swift; sourceTree = "<group>"; };
+		CD79F7CD1FD91A3D0013D911 /* Day07.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day07.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				CD28A30E1FD7CDB300075A70 /* Advent Of Code 2017 */,
+				CD79F7CC1FD91A0A0013D911 /* Input */,
 				CD28A30D1FD7CDB300075A70 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,8 +65,17 @@
 			children = (
 				CD28A30F1FD7CDB300075A70 /* main.swift */,
 				CD28A3161FD7CDD500075A70 /* Day06.swift */,
+				CD79F7CA1FD895BF0013D911 /* Day07.swift */,
 			);
 			path = "Advent Of Code 2017";
+			sourceTree = "<group>";
+		};
+		CD79F7CC1FD91A0A0013D911 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				CD79F7CD1FD91A3D0013D911 /* Day07.txt */,
+			);
+			path = Input;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +138,7 @@
 			files = (
 				CD28A3171FD7CDD500075A70 /* Day06.swift in Sources */,
 				CD28A3101FD7CDB300075A70 /* main.swift in Sources */,
+				CD79F7CB1FD895BF0013D911 /* Day07.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
