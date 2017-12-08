@@ -10,6 +10,7 @@
 		CD28A3101FD7CDB300075A70 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28A30F1FD7CDB300075A70 /* main.swift */; };
 		CD28A3171FD7CDD500075A70 /* Day06.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28A3161FD7CDD500075A70 /* Day06.swift */; };
 		CD79F7CB1FD895BF0013D911 /* Day07.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD79F7CA1FD895BF0013D911 /* Day07.swift */; };
+		CDFB14BB1FDA536100AEACE8 /* Day08.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFB14BA1FDA536100AEACE8 /* Day08.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,8 @@
 		CD28A3161FD7CDD500075A70 /* Day06.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day06.swift; sourceTree = "<group>"; };
 		CD79F7CA1FD895BF0013D911 /* Day07.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day07.swift; sourceTree = "<group>"; };
 		CD79F7CD1FD91A3D0013D911 /* Day07.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day07.txt; sourceTree = "<group>"; };
+		CDFB14BA1FDA536100AEACE8 /* Day08.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day08.swift; sourceTree = "<group>"; };
+		CDFB14BC1FDA53F900AEACE8 /* Day08.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day08.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,7 @@
 				CD28A30F1FD7CDB300075A70 /* main.swift */,
 				CD28A3161FD7CDD500075A70 /* Day06.swift */,
 				CD79F7CA1FD895BF0013D911 /* Day07.swift */,
+				CDFB14BA1FDA536100AEACE8 /* Day08.swift */,
 			);
 			path = "Advent Of Code 2017";
 			sourceTree = "<group>";
@@ -74,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				CD79F7CD1FD91A3D0013D911 /* Day07.txt */,
+				CDFB14BC1FDA53F900AEACE8 /* Day08.txt */,
 			);
 			path = Input;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFB14BB1FDA536100AEACE8 /* Day08.swift in Sources */,
 				CD28A3171FD7CDD500075A70 /* Day06.swift in Sources */,
 				CD28A3101FD7CDB300075A70 /* main.swift in Sources */,
 				CD79F7CB1FD895BF0013D911 /* Day07.swift in Sources */,
