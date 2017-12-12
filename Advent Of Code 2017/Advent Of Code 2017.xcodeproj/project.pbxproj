@@ -10,6 +10,8 @@
 		CD220BBD1FDD11E5009D107C /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD220BBC1FDD11E5009D107C /* Day10.swift */; };
 		CD28A3101FD7CDB300075A70 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28A30F1FD7CDB300075A70 /* main.swift */; };
 		CD28A3171FD7CDD500075A70 /* Day06.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD28A3161FD7CDD500075A70 /* Day06.swift */; };
+		CD3A879A1FDFD45000ACFC8B /* Day12.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3A87991FDFD45000ACFC8B /* Day12.swift */; };
+		CD3A879C1FDFD6D100ACFC8B /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3A879B1FDFD6D100ACFC8B /* Stack.swift */; };
 		CD62CD7B1FDE54E9005198FF /* Day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD62CD7A1FDE54E9005198FF /* Day11.swift */; };
 		CD62CD7D1FDE565B005198FF /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD62CD7C1FDE565B005198FF /* Point.swift */; };
 		CD62CD7F1FDE60BB005198FF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD62CD7E1FDE60BB005198FF /* Utils.swift */; };
@@ -35,6 +37,8 @@
 		CD28A30C1FD7CDB300075A70 /* Advent Of Code 2017 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Advent Of Code 2017"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD28A30F1FD7CDB300075A70 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CD28A3161FD7CDD500075A70 /* Day06.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day06.swift; sourceTree = "<group>"; };
+		CD3A87991FDFD45000ACFC8B /* Day12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day12.swift; sourceTree = "<group>"; };
+		CD3A879B1FDFD6D100ACFC8B /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		CD62CD791FDE54CA005198FF /* Day11.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day11.txt; sourceTree = "<group>"; };
 		CD62CD7A1FDE54E9005198FF /* Day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day11.swift; sourceTree = "<group>"; };
 		CD62CD7C1FDE565B005198FF /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
@@ -85,8 +89,10 @@
 				CD7F52331FDBB52A00367F28 /* Day09.swift */,
 				CD220BBC1FDD11E5009D107C /* Day10.swift */,
 				CD62CD7A1FDE54E9005198FF /* Day11.swift */,
+				CD3A87991FDFD45000ACFC8B /* Day12.swift */,
 				CD62CD7C1FDE565B005198FF /* Point.swift */,
 				CD62CD7E1FDE60BB005198FF /* Utils.swift */,
+				CD3A879B1FDFD6D100ACFC8B /* Stack.swift */,
 			);
 			path = "Advent Of Code 2017";
 			sourceTree = "<group>";
@@ -165,8 +171,10 @@
 				CD62CD7F1FDE60BB005198FF /* Utils.swift in Sources */,
 				CD28A3171FD7CDD500075A70 /* Day06.swift in Sources */,
 				CD28A3101FD7CDB300075A70 /* main.swift in Sources */,
+				CD3A879C1FDFD6D100ACFC8B /* Stack.swift in Sources */,
 				CD79F7CB1FD895BF0013D911 /* Day07.swift in Sources */,
 				CD7F52341FDBB52A00367F28 /* Day09.swift in Sources */,
+				CD3A879A1FDFD45000ACFC8B /* Day12.swift in Sources */,
 				CD220BBD1FDD11E5009D107C /* Day10.swift in Sources */,
 				CD62CD7B1FDE54E9005198FF /* Day11.swift in Sources */,
 			);
