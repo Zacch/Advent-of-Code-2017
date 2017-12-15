@@ -33,6 +33,16 @@ class Day10 {
         print("Part 2: \(compressHash())")
     }
  
+    func hashAndCompress(_ input: String) -> String {
+        initialize(256)
+        var asciiInput = input.unicodeScalars.map { Int($0.value) }
+        asciiInput.append(contentsOf: [17, 31, 73, 47, 23])
+        for _ in 0..<64 {
+            hash(asciiInput)
+        }
+        return compressHash()
+    }
+
     func initialize(_ size: Int) {
         self.size = size
         list = []
