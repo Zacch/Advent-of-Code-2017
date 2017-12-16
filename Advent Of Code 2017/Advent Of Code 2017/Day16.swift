@@ -8,7 +8,7 @@
 
 import Foundation
 
-var positions = "abcdefghijklmnop"
+var positions: [Character] = Array("abcdefghijklmnop")
 let numberOfLetters = positions.count
 
 // Base class for the dance moves
@@ -23,24 +23,21 @@ class Swap: Move {
     }
     
     override func doIt() {
-        positions = String(positions.suffix(numberOfLetters - splitIndex) + positions.prefix(splitIndex))
+        positions = Array(positions.suffix(numberOfLetters - splitIndex) +
+                          positions.prefix(splitIndex))
     }
 }
 class Exchange: Move {
     let p1: Int
     let p2: Int
-    let middleRange: NSRange
     init(_ s: String) {
         let args = s.split(separator: "/").map {Int($0)!}
         p1 = min(args[0], args[01])
         p2 = max(args[0], args[01])
-        middleRange = NSMakeRange(p1, p2 - p1)
     }
     
     override func doIt() {
-        var chars = Array(positions)
-        chars.swapAt(p1, p2)
-        positions = String(chars)
+        positions.swapAt(p1, p2)
     }
 }
 class SwitchPlaces: Move {
@@ -53,12 +50,9 @@ class SwitchPlaces: Move {
     }
     
     override func doIt() {
-        var chars = Array(positions)
-        let i1 = chars.index(of: c1)!
-        let i2 = chars.index(of: c2)!
-
-        chars.swapAt(i1, i2)
-        positions = String(chars)
+        let i1 = positions.index(of: c1)!
+        let i2 = positions.index(of: c2)!
+        positions.swapAt(i1, i2)
     }
 }
 
@@ -67,7 +61,6 @@ class Day16 {
     
     func solve() {
         let input = Utils.readFile("Day16.txt")
-        //let input = "s1,x3/4,pe/b"
         let moveStrings = input.split(separator: ",")
         for s in moveStrings {
             switch s.first! {
@@ -83,14 +76,14 @@ class Day16 {
         }
         let startTime = getCurrentMillis()
         dance()
-        print("Part 1: \(positions)")
+        print("Part 1: \(String(positions))")
         for i in 1 ..< 1000000000 {
             if i % 100 == 0 {
                 print("\(i) iterations. Average \((getCurrentMillis() - startTime)  / Int64(i) ) milliseconds")
             }
             dance()
         }
-        print("Part 2: \(positions)")
+        print("Part 2: \(String(positions))")
     }
     
     func dance() {
