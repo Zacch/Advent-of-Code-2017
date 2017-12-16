@@ -11,12 +11,68 @@ import Foundation
 var positions:[String] = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p"]
 let numberOfLetters = positions.count
 
+// Base class for the dance moves
+class Move {
+    func doIt() {}
+}
+
+class Swap: Move {
+    let splitIndex: Int
+    init(_ s: String) {
+        splitIndex = numberOfLetters - Int(s)!
+    }
+    
+    override func doIt() {
+        var newPositions = positions[splitIndex...]
+        newPositions.append(contentsOf: positions[0 ..< splitIndex])
+        positions = Array(newPositions)
+    }
+}
+class Exchange: Move {
+    let p1: Int
+    let p2: Int
+    init(_ s: String) {
+        let args = s.split(separator: "/").map {Int($0)!}
+        p1 = args[0]
+        p2 = args[1]
+    }
+    
+    override func doIt() {
+        positions.swapAt(p1, p2)
+    }
+}
+class SwitchPlaces: Move {
+    let p1: String
+    let p2: String
+    init(_ s: String) {
+        let args = s.split(separator: "/").map {String($0)}
+        p1 = args[0]
+        p2 = args[1]
+    }
+    
+    override func doIt() {
+        positions.swapAt(positions.index(of: p1)!, positions.index(of: p2)!)
+    }
+}
+
 class Day16 {
-    var moves: [String] = []
+    var moves: [Move] = []
     
     func solve() {
         let input = Utils.readFile("Day16.txt")
-        moves = input.split(separator: ",").map{String($0)}
+        let moveStrings = input.split(separator: ",")
+        for s in moveStrings {
+            switch s.first! {
+            case "s":
+                moves.append(Swap(String(s.dropFirst())))
+            case "x":
+                moves.append(Exchange(String(s.dropFirst())))
+            case "p":
+                moves.append(SwitchPlaces(String(s.dropFirst())))
+            default:
+                print("Error")
+            }
+        }
         let startTime = getCurrentMillis()
         dance()
         print("Part 1: \(positions.joined())")
@@ -31,24 +87,7 @@ class Day16 {
     
     func dance() {
         for move in moves {
-            switch move.first! {
-            case "s":
-                let splitIndex = numberOfLetters - Int(move.dropFirst())!
-                var newPositions = positions[splitIndex...]
-                newPositions.append(contentsOf: positions[0 ..< splitIndex])
-                positions = Array(newPositions)
-                //print("s \(positions)")
-            case "x":
-                let args = move.dropFirst().split(separator: "/").map {Int($0)!}
-                positions.swapAt(args[0], args[1])
-                //print("x \(positions)")
-            case "p":
-                let args = move.dropFirst().split(separator: "/").map {positions.index(of: String($0))!}
-                positions.swapAt(args[0], args[1])
-                //print("p \(positions)")
-            default:
-                print("Error")
-            }
+            move.doIt()
         }
     }
     func getCurrentMillis()->Int64 {
