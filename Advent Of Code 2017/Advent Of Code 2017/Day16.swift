@@ -10,6 +10,7 @@ import Foundation
 
 var positions: [Character] = Array("abcdefghijklmnop")
 let numberOfLetters = positions.count
+var savedPositions: [String] = []
 
 // Base class for the dance moves
 class Move {
@@ -74,24 +75,26 @@ class Day16 {
                 print("Error")
             }
         }
-        let startTime = getCurrentMillis()
+
+        savedPositions.append(String(positions))
         dance()
+        savedPositions.append(String(positions))
         print("Part 1: \(String(positions))")
-        for i in 1 ..< 1000000000 {
-            if i % 100 == 0 {
-                print("\(i) iterations. Average \((getCurrentMillis() - startTime)  / Int64(i) ) milliseconds")
-            }
+
+        for i in 2... {
             dance()
+            let s = String(positions)
+            if (savedPositions.contains(s)) {
+                print("Part 2: \(savedPositions[1000000000 % i])")
+                exit(0)
+            }
+            savedPositions.append(s)
         }
-        print("Part 2: \(String(positions))")
     }
-    
+
     func dance() {
         for move in moves {
             move.doIt()
         }
-    }
-    func getCurrentMillis()->Int64 {
-        return Int64(Date().timeIntervalSince1970 * 1000)
     }
 }
