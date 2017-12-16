@@ -6,9 +6,9 @@ import java.util.Vector;
  * Created by Rolf Staflin (Rex) on 2017-12-16.
  */
 public class Day16 {
-    //public static String positions = "abcde";
-    public static String positions = "abcdefghijklmnop";
-    public static int length = positions.length();
+    public static byte[] bytes = "abcdefghijklmnop".getBytes();
+    public static int length = bytes.length;
+
     Vector<Move> moves = new Vector<>();
 
     void solve() {
@@ -29,15 +29,15 @@ public class Day16 {
         }
         long startTime = System.currentTimeMillis();
         dance();
-        System.out.println("Part 1: " + positions);
+        System.out.println("Part 1: " + new String(bytes));
         for (int i = 1; i < 1000000000; i++) {
+            dance();
             if (i % 100000 == 0) {
                 double average = (System.currentTimeMillis() - startTime) / (double) i;
-                System.out.println("After " + i + " average time " + average + " ms. " + positions);
+                System.out.println("After " + i + ": average time " + average + " ms. ");
             }
-            dance();
         }
-        System.out.println("Part 2: " + positions);
+        System.out.println("Part 2: " + String.valueOf(bytes));
     }
 
     void dance() {
@@ -52,15 +52,25 @@ abstract class Move {
 }
 
 class Swap extends Move {
-
     int index;
+    byte[] tempBytes;
+
     public Swap(String step) {
-        index = Day16.length - Integer.valueOf(step.substring(1));
+        index = Integer.valueOf(step.substring(1));
+        tempBytes = new byte[index];
     }
 
     @Override
     void doIt() {
-        Day16.positions = Day16.positions.substring(index) + Day16.positions.substring(0, index);
+        for (int i = 0; i < index; i++) {
+            tempBytes[i] = Day16.bytes[Day16.length - index + i];
+        }
+        for (int i =  Day16.length - index - 1; i >= 0; i--) {
+            Day16.bytes[i + index] = Day16.bytes[i];
+        }
+        for (int i = 0; i < index; i++) {
+            Day16.bytes[i] = tempBytes[i];
+        }
     }
 }
 
@@ -70,20 +80,13 @@ class Exchange extends Move {
         String[] args = step.substring(1).split("/");
         i1 = Integer.valueOf(args[0]);
         i2 = Integer.valueOf(args[1]);
-        if (i1 > i2) {
-            i1 += i2;
-            i2 = i1 - i2;
-            i1 -= i2;
-        }
     }
 
     @Override
     void doIt() {
-        Day16.positions = Day16.positions.substring(0, i1) +
-                Day16.positions.charAt(i2) +
-                Day16.positions.substring(i1 + 1, i2) +
-                Day16.positions.charAt(i1) +
-                Day16.positions.substring(i2 + 1, Day16.length);
+        byte temp = Day16.bytes[i1];
+        Day16.bytes[i1] = Day16.bytes[i2];
+        Day16.bytes[i2] = temp;
     }
 }
 
@@ -98,17 +101,17 @@ class SwitchPlaces extends Move {
 
     @Override
     void doIt() {
-        int i1 = Day16.positions.indexOf(c1);
-        int i2 = Day16.positions.indexOf(c2);
-        if (i1 > i2) {
-            i1 += i2;
-            i2 = i1 - i2;
-            i1 -= i2;
+        int i1 = 0, i2 = 0;
+        for (int i = 0; i < Day16.length; i++) {
+            if (Day16.bytes[i] == c1) {
+                i1 = i;
+            }
+            if (Day16.bytes[i] == c2) {
+                i2 = i;
+            }
         }
-        Day16.positions = Day16.positions.substring(0, i1) +
-                Day16.positions.charAt(i2) +
-                Day16.positions.substring(i1 + 1, i2) +
-                Day16.positions.charAt(i1) +
-                Day16.positions.substring(i2 + 1, Day16.length);
+        byte temp = Day16.bytes[i1];
+        Day16.bytes[i1] = Day16.bytes[i2];
+        Day16.bytes[i2] = temp;
     }
 }
