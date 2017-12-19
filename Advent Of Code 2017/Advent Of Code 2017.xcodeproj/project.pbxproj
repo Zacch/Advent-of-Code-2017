@@ -19,6 +19,7 @@
 		CD3A879F1FE1209F00ACFC8B /* Day13.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3A879E1FE1209F00ACFC8B /* Day13.swift */; };
 		CD57D4741FE7877800F6F892 /* Day18.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD57D4731FE7877800F6F892 /* Day18.swift */; };
 		CD57D4771FE7A4A600F6F892 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD57D4761FE7A4A600F6F892 /* Queue.swift */; };
+		CD57D4791FE8EBE500F6F892 /* Day19.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD57D4781FE8EBE500F6F892 /* Day19.swift */; };
 		CD62CD7B1FDE54E9005198FF /* Day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD62CD7A1FDE54E9005198FF /* Day11.swift */; };
 		CD62CD7D1FDE565B005198FF /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD62CD7C1FDE565B005198FF /* Point.swift */; };
 		CD62CD7F1FDE60BB005198FF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD62CD7E1FDE60BB005198FF /* Utils.swift */; };
@@ -57,6 +58,8 @@
 		CD57D4731FE7877800F6F892 /* Day18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day18.swift; sourceTree = "<group>"; };
 		CD57D4751FE78AB200F6F892 /* Day18.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Day18.txt; sourceTree = "<group>"; };
 		CD57D4761FE7A4A600F6F892 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		CD57D4781FE8EBE500F6F892 /* Day19.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day19.swift; sourceTree = "<group>"; };
+		CD57D47A1FE8EC1600F6F892 /* Day19.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Day19.txt; sourceTree = "<group>"; };
 		CD62CD791FDE54CA005198FF /* Day11.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day11.txt; sourceTree = "<group>"; };
 		CD62CD7A1FDE54E9005198FF /* Day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day11.swift; sourceTree = "<group>"; };
 		CD62CD7C1FDE565B005198FF /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
@@ -115,6 +118,7 @@
 				CD0A6BA61FE5003800C76A86 /* Day16.swift */,
 				CD1F015F1FE6653500DC8FD0 /* Day17.swift */,
 				CD57D4731FE7877800F6F892 /* Day18.swift */,
+				CD57D4781FE8EBE500F6F892 /* Day19.swift */,
 			);
 			path = "Advent Of Code 2017";
 			sourceTree = "<group>";
@@ -141,6 +145,7 @@
 				CD3A87A11FE120C000ACFC8B /* Day13.txt */,
 				CD0A6BA51FE5001500C76A86 /* Day16.txt */,
 				CD57D4751FE78AB200F6F892 /* Day18.txt */,
+				CD57D47A1FE8EC1600F6F892 /* Day19.txt */,
 			);
 			path = Input;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 				CD62CD7B1FDE54E9005198FF /* Day11.swift in Sources */,
 				CD0B9C6D1FE39BC500AFE6AA /* Day15.swift in Sources */,
 				CD30F8891FE24819008AF7DB /* Day14.swift in Sources */,
+				CD57D4791FE8EBE500F6F892 /* Day19.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
