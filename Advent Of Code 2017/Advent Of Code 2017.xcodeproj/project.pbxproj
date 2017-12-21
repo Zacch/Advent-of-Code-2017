@@ -68,6 +68,8 @@
 		CD62CD7E1FDE60BB005198FF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		CD6EA6801FE9AA9400C244D4 /* Day20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day20.swift; sourceTree = "<group>"; };
 		CD6EA6821FEBA19600C244D4 /* Day21.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day21.swift; sourceTree = "<group>"; };
+		CD6EA6841FEBA84300C244D4 /* Day21.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Day21.txt; sourceTree = "<group>"; };
+		CD6EA6851FEBA84300C244D4 /* Day20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Day20.txt; sourceTree = "<group>"; };
 		CD79F7CA1FD895BF0013D911 /* Day07.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day07.swift; sourceTree = "<group>"; };
 		CD79F7CD1FD91A3D0013D911 /* Day07.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day07.txt; sourceTree = "<group>"; };
 		CD7F52331FDBB52A00367F28 /* Day09.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day09.swift; sourceTree = "<group>"; };
@@ -152,6 +154,8 @@
 				CD0A6BA51FE5001500C76A86 /* Day16.txt */,
 				CD57D4751FE78AB200F6F892 /* Day18.txt */,
 				CD57D47A1FE8EC1600F6F892 /* Day19.txt */,
+				CD6EA6851FEBA84300C244D4 /* Day20.txt */,
+				CD6EA6841FEBA84300C244D4 /* Day21.txt */,
 			);
 			path = Input;
 			sourceTree = "<group>";
