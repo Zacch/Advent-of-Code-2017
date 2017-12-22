@@ -19,6 +19,14 @@ class Point: NSObject {
         return Point(x:-y, y:x)
     }
     
+    func turnRight() -> Point {
+        return Point(x:y, y:-x)
+    }
+    
+    func reverse() -> Point {
+        return Point(x:-x, y:-y)
+    }
+
     override public var description: String {
         return "[\(x),\(y)]"
     }

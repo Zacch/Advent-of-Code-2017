@@ -27,6 +27,7 @@
 		CD6EA6831FEBA19600C244D4 /* Day21.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6EA6821FEBA19600C244D4 /* Day21.swift */; };
 		CD79F7CB1FD895BF0013D911 /* Day07.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD79F7CA1FD895BF0013D911 /* Day07.swift */; };
 		CD7F52341FDBB52A00367F28 /* Day09.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F52331FDBB52A00367F28 /* Day09.swift */; };
+		CDE5281A1FECE0A2004EEB31 /* Day22.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE528191FECE0A2004EEB31 /* Day22.swift */; };
 		CDFB14BB1FDA536100AEACE8 /* Day08.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFB14BA1FDA536100AEACE8 /* Day08.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		CD79F7CD1FD91A3D0013D911 /* Day07.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day07.txt; sourceTree = "<group>"; };
 		CD7F52331FDBB52A00367F28 /* Day09.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day09.swift; sourceTree = "<group>"; };
 		CD7F52351FDBC38900367F28 /* Day09.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day09.txt; sourceTree = "<group>"; };
+		CDE528191FECE0A2004EEB31 /* Day22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day22.swift; sourceTree = "<group>"; };
 		CDFB14BA1FDA536100AEACE8 /* Day08.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day08.swift; sourceTree = "<group>"; };
 		CDFB14BC1FDA53F900AEACE8 /* Day08.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day08.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +129,7 @@
 				CD57D4781FE8EBE500F6F892 /* Day19.swift */,
 				CD6EA6801FE9AA9400C244D4 /* Day20.swift */,
 				CD6EA6821FEBA19600C244D4 /* Day21.swift */,
+				CDE528191FECE0A2004EEB31 /* Day22.swift */,
 			);
 			path = "Advent Of Code 2017";
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				CDFB14BB1FDA536100AEACE8 /* Day08.swift in Sources */,
 				CD6EA6831FEBA19600C244D4 /* Day21.swift in Sources */,
 				CD62CD7F1FDE60BB005198FF /* Utils.swift in Sources */,
+				CDE5281A1FECE0A2004EEB31 /* Day22.swift in Sources */,
 				CD28A3171FD7CDD500075A70 /* Day06.swift in Sources */,
 				CD28A3101FD7CDB300075A70 /* main.swift in Sources */,
 				CD3A879C1FDFD6D100ACFC8B /* Stack.swift in Sources */,
