@@ -1,0 +1,52 @@
+set b 57
+set c b
+jnz a A:
+jnz 1 B:
+
+A:
+mul b 100
+sub b -100000   b = 105700
+set c b
+sub c -17000    c = 122700
+
+------------
+
+B:       loop {      // 1000 times
+set f 1    f = 1
+set d 2    d = 2
+
+E:         repeat {
+set e 2      e = 2
+
+D:           repeat {
+set g d       if (d * e == b) { f = 0 }
+mul g e
+sub g b
+jnz g C:
+set f 0
+
+C:
+sub e -1       e ++
+set g e      } until e == b
+sub g b
+jnz g D:
+
+sub d -1     d ++
+set g d    } until d == b 
+sub g b
+jnz g E:
+
+jnz f F: if (f == 0) { h++ }
+sub h -1
+
+F:          if (b == c) {exit}
+set g b
+sub g c
+jnz g G:
+jnz 1 H:
+
+G:
+sub b -17    b += 17
+jnz 1 B:    }
+
+H:
