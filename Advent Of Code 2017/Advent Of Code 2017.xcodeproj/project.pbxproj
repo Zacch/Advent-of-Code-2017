@@ -27,6 +27,7 @@
 		CD6EA6831FEBA19600C244D4 /* Day21.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6EA6821FEBA19600C244D4 /* Day21.swift */; };
 		CD79F7CB1FD895BF0013D911 /* Day07.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD79F7CA1FD895BF0013D911 /* Day07.swift */; };
 		CD7F52341FDBB52A00367F28 /* Day09.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F52331FDBB52A00367F28 /* Day09.swift */; };
+		CD951D5A1FEE5A8F00AA71A8 /* Day23.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD951D591FEE5A8F00AA71A8 /* Day23.swift */; };
 		CDE5281A1FECE0A2004EEB31 /* Day22.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE528191FECE0A2004EEB31 /* Day22.swift */; };
 		CDFB14BB1FDA536100AEACE8 /* Day08.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFB14BA1FDA536100AEACE8 /* Day08.swift */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,7 @@
 		CD79F7CD1FD91A3D0013D911 /* Day07.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day07.txt; sourceTree = "<group>"; };
 		CD7F52331FDBB52A00367F28 /* Day09.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day09.swift; sourceTree = "<group>"; };
 		CD7F52351FDBC38900367F28 /* Day09.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day09.txt; sourceTree = "<group>"; };
+		CD951D591FEE5A8F00AA71A8 /* Day23.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day23.swift; sourceTree = "<group>"; };
 		CDE528191FECE0A2004EEB31 /* Day22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day22.swift; sourceTree = "<group>"; };
 		CDFB14BA1FDA536100AEACE8 /* Day08.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day08.swift; sourceTree = "<group>"; };
 		CDFB14BC1FDA53F900AEACE8 /* Day08.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day08.txt; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				CD6EA6801FE9AA9400C244D4 /* Day20.swift */,
 				CD6EA6821FEBA19600C244D4 /* Day21.swift */,
 				CDE528191FECE0A2004EEB31 /* Day22.swift */,
+				CD951D591FEE5A8F00AA71A8 /* Day23.swift */,
 			);
 			path = "Advent Of Code 2017";
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				CD1F01601FE6653500DC8FD0 /* Day17.swift in Sources */,
 				CD62CD7B1FDE54E9005198FF /* Day11.swift in Sources */,
 				CD0B9C6D1FE39BC500AFE6AA /* Day15.swift in Sources */,
+				CD951D5A1FEE5A8F00AA71A8 /* Day23.swift in Sources */,
 				CD30F8891FE24819008AF7DB /* Day14.swift in Sources */,
 				CD57D4791FE8EBE500F6F892 /* Day19.swift in Sources */,
 			);
