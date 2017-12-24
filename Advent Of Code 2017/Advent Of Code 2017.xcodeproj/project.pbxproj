@@ -28,6 +28,7 @@
 		CD79F7CB1FD895BF0013D911 /* Day07.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD79F7CA1FD895BF0013D911 /* Day07.swift */; };
 		CD7F52341FDBB52A00367F28 /* Day09.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F52331FDBB52A00367F28 /* Day09.swift */; };
 		CD951D5A1FEE5A8F00AA71A8 /* Day23.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD951D591FEE5A8F00AA71A8 /* Day23.swift */; };
+		CD951D601FEF85EF00AA71A8 /* Day24.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD951D5F1FEF85EF00AA71A8 /* Day24.swift */; };
 		CDE5281A1FECE0A2004EEB31 /* Day22.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE528191FECE0A2004EEB31 /* Day22.swift */; };
 		CDFB14BB1FDA536100AEACE8 /* Day08.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFB14BA1FDA536100AEACE8 /* Day08.swift */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,11 @@
 		CD7F52331FDBB52A00367F28 /* Day09.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day09.swift; sourceTree = "<group>"; };
 		CD7F52351FDBC38900367F28 /* Day09.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day09.txt; sourceTree = "<group>"; };
 		CD951D591FEE5A8F00AA71A8 /* Day23.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day23.swift; sourceTree = "<group>"; };
+		CD951D5B1FEF858700AA71A8 /* Day23.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Day23.txt; sourceTree = "<group>"; };
+		CD951D5C1FEF858700AA71A8 /* Day22.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Day22.txt; sourceTree = "<group>"; };
+		CD951D5D1FEF858800AA71A8 /* Day23 with comments.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Day23 with comments.txt"; sourceTree = "<group>"; };
+		CD951D5E1FEF858800AA71A8 /* Day24.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Day24.txt; sourceTree = "<group>"; };
+		CD951D5F1FEF85EF00AA71A8 /* Day24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day24.swift; sourceTree = "<group>"; };
 		CDE528191FECE0A2004EEB31 /* Day22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day22.swift; sourceTree = "<group>"; };
 		CDFB14BA1FDA536100AEACE8 /* Day08.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day08.swift; sourceTree = "<group>"; };
 		CDFB14BC1FDA53F900AEACE8 /* Day08.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day08.txt; sourceTree = "<group>"; };
@@ -133,6 +139,7 @@
 				CD6EA6821FEBA19600C244D4 /* Day21.swift */,
 				CDE528191FECE0A2004EEB31 /* Day22.swift */,
 				CD951D591FEE5A8F00AA71A8 /* Day23.swift */,
+				CD951D5F1FEF85EF00AA71A8 /* Day24.swift */,
 			);
 			path = "Advent Of Code 2017";
 			sourceTree = "<group>";
@@ -162,6 +169,10 @@
 				CD57D47A1FE8EC1600F6F892 /* Day19.txt */,
 				CD6EA6851FEBA84300C244D4 /* Day20.txt */,
 				CD6EA6841FEBA84300C244D4 /* Day21.txt */,
+				CD951D5C1FEF858700AA71A8 /* Day22.txt */,
+				CD951D5B1FEF858700AA71A8 /* Day23.txt */,
+				CD951D5D1FEF858800AA71A8 /* Day23 with comments.txt */,
+				CD951D5E1FEF858800AA71A8 /* Day24.txt */,
 			);
 			path = Input;
 			sourceTree = "<group>";
@@ -234,6 +245,7 @@
 				CD3A879C1FDFD6D100ACFC8B /* Stack.swift in Sources */,
 				CD79F7CB1FD895BF0013D911 /* Day07.swift in Sources */,
 				CD57D4771FE7A4A600F6F892 /* Queue.swift in Sources */,
+				CD951D601FEF85EF00AA71A8 /* Day24.swift in Sources */,
 				CD7F52341FDBB52A00367F28 /* Day09.swift in Sources */,
 				CD3A879F1FE1209F00ACFC8B /* Day13.swift in Sources */,
 				CD6EA6811FE9AA9400C244D4 /* Day20.swift in Sources */,
